@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Witcher quiz</title>
+  </head>
+  <body>
+    <!-- Top section -->
+    <header id="title" class="py-3 bg-white text-center">
+      <div class="container">
+        <h2 class="text-dark my-4 display-3">Witcher Quiz</h2>
+      </div>
+    </header>
+
+    <!-- Result section -->
+    <section id="result" class="py-4 d-none bg-light text-center">
+      <div class="container lead">
+        <p>You are <span class="text-dark display-4 p-3">0%</span> witcher</p>
+      </div>
+    </section>
+
+    <!-- Quiz section -->
+    <section id="quiz" class="bg-dark">
+      <div class="container py-4 bg-dark">
+        <h2 class="my-5 text-white">
+          Are you a true witcher fan? See if you can answer these trivia
+          questions correctly
+        </h2>
+        <form class="quiz-form text-light">
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              1. Where is The School of the Wolf located?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" id="kaer" value="A" />
+              <label class="form-check-label" for="kaer">Kaer Morhen</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" id="gwen" value="B" />
+              <label class="form-check-label" for="gwen">Gwenllech</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" id="vizima" value="C" />
+              <label class="form-check-label" for="vizima">Vizima</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" id="novi" value="D" />
+              <label class="form-check-label" for="novi">Novigrad</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              2. Which of these is NOT one of Geralt's nicknames?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" id="butcher" value="A" />
+              <label class="form-check-label" for="butcher"
+                >The Butcher of Blaviken</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" id="zirael" value="B" />
+              <label class="form-check-label" for="zirael">Zireael</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" id="gwyn" value="C" />
+              <label class="form-check-label" for="gwyn">Gwynbleidd</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" id="whitew" value="D" />
+              <label class="form-check-label" for="whitew"
+                >The White Wolf</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. What is the name of the beast Geralt had to fight in the
+              opening scenes of the show?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" id="hydra" value="A" />
+              <label class="form-check-label" for="hydra">Hydra</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" id="bruxa" value="B" />
+              <label class="form-check-label" for="bruxa">Bruxa</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" id="graveir" value="C" />
+              <label class="form-check-label" for="graveir">Graveir</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" id="kiki" value="D" />
+              <label class="form-check-label" for="kiki">Kikimore</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. Who was king Foltest's advisor?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" id="triss" value="A" />
+              <label class="form-check-label" for="triss">Triss</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" id="yen" value="B" />
+              <label class="form-check-label" for="yen">Yennefer</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" id="ciri" value="C" />
+              <label class="form-check-label" for="ciri">Ciri</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" id="sabrina" value="D" />
+              <label class="form-check-label" for="sabrina">Sabrina</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              5. What event brought monsters to the witcher's world?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" id="ithlinne" value="A" />
+              <label class="form-check-label" for="ithlinne"
+                >Ithlinne's prophecy</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" id="conjunction" value="B" />
+              <label class="form-check-label" for="conjunction"
+                >Conjunction of the spheres</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" id="tearing" value="C" />
+              <label class="form-check-label" for="tearing">The tearing</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" id="breaking" value="D" />
+              <label class="form-check-label" for="breaking"
+                >The breaking of the world</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              6. Foltest is a king in which kingdom?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" id="redania" value="A" />
+              <label class="form-check-label" for="redania">Redania</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" id="kaedwen" value="B" />
+              <label class="form-check-label" for="kaedwen">Kaedwen</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" id="tameria" value="C" />
+              <label class="form-check-label" for="tameria">Temeria</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" id="skellige" value="D" />
+              <label class="form-check-label" for="skellige">Skellige</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              7. Whose name Geralt kept repeating while unconscious from striga
+              battle?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" id="renfri" value="A" />
+              <label class="form-check-label" for="renfri">Renfri</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" id="yennefer" value="B" />
+              <label class="form-check-label" for="yennefer">Yennefer</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" id="ciri1" value="C" />
+              <label class="form-check-label" for="ciri1">Ciri</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" id="visenna" value="D" />
+              <label class="form-check-label" for="visenna">Visenna</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              8. How did Ciri's parents die?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" id="nilf" value="A" />
+              <label class="form-check-label" for="nilf"
+                >Nilfgaardian army ambushed their carriage and killed
+                them</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" id="assassins" value="B" />
+              <label class="form-check-label" for="assassins"
+                >Assassins killed them</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" id="lostsea" value="C" />
+              <label class="form-check-label" for="lostsea"
+                >They were lost at sea</label
+              >
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" id="coup" value="D" />
+              <label class="form-check-label" for="coup">During the coup</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              9. Where do we first meet Jaskier?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" id="pos" value="A" />
+              <label class="form-check-label" for="pos">In Posada</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" id="novigr" value="B" />
+              <label class="form-check-label" for="novigr">In Novigrad</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" id="skell" value="C" />
+              <label class="form-check-label" for="skell">In Skellige</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" id="crow" value="D" />
+              <label class="form-check-label" for="crow">In Crow's Perch</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              10. Which dragon is the rarest?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" id="gree" value="A" />
+              <label class="form-check-label" for="gree">Green</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" id="re" value="B" />
+              <label class="form-check-label" for="re">Red</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" id="blac" value="C" />
+              <label class="form-check-label" for="blac">Black</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" id="golde" value="D" />
+              <label class="form-check-label" for="golde">Golden</label>
+            </div>
+          </div>
+          <div class="text-center">
+            <input type="submit" class="mb-4 btn btn-light" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Image footer -->
+    <section id="footer">
+      <div class="img"></div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

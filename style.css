@@ -1,0 +1,7 @@
+#footer .img {
+  background: url(./img.jpg) no-repeat center center/cover;
+  height: 500px;
+  max-width: 1200px;
+  display: block;
+  margin: auto;
+}
